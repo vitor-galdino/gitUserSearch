@@ -1,0 +1,10 @@
+@keyframes spinner {
+    50% {
+        opacity: .6;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}

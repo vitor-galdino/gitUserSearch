@@ -1,0 +1,99 @@
+.primary-btn {
+    border: none;
+    background-color: var(--color-brand-2);
+    border-radius: var(--radius-1);
+    height: 2.375rem;
+    padding: 0rem 1.5rem;
+    color: var(--color-white);
+    font-family: var(--font-family-1);
+    font-weight: 600;
+    font-size: .875rem;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.primary-btn:hover {
+    background-color: var(--color-brand-1);
+}
+
+.dark-btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-grey-3);
+    border-radius: var(--radius-1);
+    height: 2.375rem;
+    width: max-content;
+    padding: 0rem 1.5rem;
+    color: var(--color-white);
+    font-family: var(--font-family-1);
+    font-weight: 600;
+    font-size: .875rem;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.dark-btn:hover {
+    background-color: var(--color-grey-4);
+}
+
+.tag-btn {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    border-radius: var(--radius-2);
+    border: 1px solid var(--color-white);
+    height: 28px;
+    padding: 0rem .5rem;
+    color: var(--color-white);
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    font-size: .875rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.tag-btn:is(:hover, :focus) {
+    background-color: var(--color-brand-2);
+    border: 1px solid var(--color-brand-2);
+}
+
+.disabled {
+    background-color: var(--color-opacity-1);
+    color: var(--color-opacity-2);
+    user-select: none;
+    cursor: default;
+}
+
+.disabled:is(:hover, :focus) {
+    background-color: var(--color-opacity-1);
+    color: var(--color-opacity-2);
+}
+
+.loading {
+    position: relative;
+    background-color: var(--color-opacity-1);
+    color: transparent;
+    user-select: none;
+    cursor: default;
+}
+
+.loading:is(:hover, :focus) {
+    background-color: var(--color-opacity-1);
+    color: transparent;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-image: url(../img/spinner.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    animation: spinner 1.5s cubic-bezier(0.58, 0.75, 1, 1) infinite;
+}
