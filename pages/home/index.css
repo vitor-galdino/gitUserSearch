@@ -1,0 +1,141 @@
+.homepage-container {
+    display: flex;
+    color: var(--color-white);
+}
+
+.left-side {
+    background-color: var(--color-brand-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.left-box {
+    width: 63.2%;
+}
+
+.left-box h1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.left-box p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+    margin: 2.3125rem 0 2.8125rem;
+}
+
+.left-box .user-history {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+}
+
+.left-box .user-history h4 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.left-box .profile-users {
+    display: flex;
+    gap: 8px;
+}
+
+.left-box .profile-users .user-img img {
+    user-select: none;
+    border-radius: 40px;
+    width: 44px;
+    height: 44px;
+}
+
+.left-box .profile-users .user-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    box-sizing: content-box;
+    transition: all .3s;
+}
+
+.left-box .profile-users .user-img::after {
+    content: 'Acessar este perfil';
+    color: var(--color-grey-2);
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    font-size: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 39px;
+    background-color: var(--color-white);
+    padding: .25rem .5rem;
+    border-radius: var(--radius-2);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    width: 124px;
+    height: 26px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+    z-index: 1;
+}
+
+
+.left-box .profile-users .user-img:hover::after {
+    pointer-events: visible;
+    opacity: 1;
+}
+
+.left-box .profile-users .user-img:hover {
+    border: 1px solid var(--color-white);
+}
+
+.right-side {
+    background-color: var(--color-grey-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.right-box h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 45px;
+}
+
+.right-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-box form label {
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+.right-box form input {
+    margin-top: .75rem;
+}
+
+.right-box form .not-found {
+    margin-top: .75rem;
+    font-weight: 400;
+    font-size: .875rem;
+    color: var(--color-alert);
+}
+
+.right-box form button {
+    margin-top: 1.25rem;
+    border-radius: var(--radius-2);
+}

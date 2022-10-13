@@ -1,0 +1,125 @@
+header {
+    margin: 61px 0 70px;
+}
+
+.profile-container {
+    width: 784px;
+    max-width: 57.4vw;
+    margin: auto;
+    color: var(--color-white);
+    margin-bottom: 41px;
+}
+
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    gap: 20px;
+}
+
+.profile-info img {
+    user-select: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 150px;
+    border: 2px solid var(--color-brand-2);
+}
+
+.profile-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.profile-desc h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.profile-desc span {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-opacity-3);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.user-tool {
+    display: flex;
+}
+
+.user-tool ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.user-tool .primary-btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.repos-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.repos-content .card {
+    width: 381px;
+    height: 243px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-1);
+    background-color: transparent;
+    padding: 2.375rem 1.6875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s;
+}
+
+.repos-content .card:hover {
+    background-color: var(--color-grey-1);
+    border: 2px solid var(--color-white);
+}
+
+.repos-content .card h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.repos-content .card p {
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 150%;
+    color: var(--color-opacity-3);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.repos-content .card .repos-links {
+    display: flex;
+    gap: 15px;
+}
