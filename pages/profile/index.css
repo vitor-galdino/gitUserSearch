@@ -3,7 +3,7 @@ header {
 }
 
 .transition-reverse {
-    animation: redirectToHome .6s cubic-bezier(.51,.92,.24,1.15);
+    animation: redirectToHome .6s cubic-bezier(.51, .92, .24, 1.15);
 }
 
 .profile-container {
@@ -126,4 +126,26 @@ header {
 .repos-content .card .repos-links {
     display: flex;
     gap: 15px;
+}
+
+@media (max-width: 1350px) {
+    .repos-content {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 461px) {
+    .user-tool {
+        margin-top: 20px;
+    }
+
+    .user-tool li {
+        width: 100%;
+    }
+
+    .user-tool a,
+    .user-tool button {
+        width: 100%;
+        justify-content: center;
+    }
 }

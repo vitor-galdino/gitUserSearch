@@ -1,5 +1,5 @@
 .transition {
-    animation: redirectToProfile .7s cubic-bezier(.51,.92,.24,1.15);
+    animation: redirectToProfile .7s cubic-bezier(.51, .92, .24, 1.15);
 }
 
 .homepage-container {
@@ -142,4 +142,60 @@
 .right-box form button {
     margin-top: 1.25rem;
     border-radius: var(--radius-2);
+}
+
+@media (max-width: 800px) {
+    .homepage-container {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepage-container::after {
+        content: '';
+        position: absolute;
+        left: 11px;
+        top: 9px;
+        background-image: url(../../img/logo-github.svg);
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 80px;
+    }
+
+    .left-side {
+        height: 50vh;
+        width: 100vw;
+        border-radius: 180px 5px 180px 5px;
+    }
+
+    .right-side {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .right-box {
+        width: 80%;
+    }
+
+    .right-box input {
+        width: auto;
+    }
+
+    .left-box h1 {
+        font-size: 1.4rem;
+    }
+
+    .left-box p {
+        font-size: 1rem;
+        margin: 1.4rem 0 1.4rem;
+    }
+
+    .user-history {
+        flex-wrap: wrap;
+    }
+
+    .left-box .user-history h4 {
+        font-weight: 500;
+        font-size: .9rem;
+    }
 }
