@@ -2,6 +2,10 @@ header {
     margin: 61px 0 70px;
 }
 
+.transition-reverse {
+    animation: redirectToHome .6s cubic-bezier(.51,.92,.24,1.15);
+}
+
 .profile-container {
     width: 784px;
     max-width: 57.4vw;

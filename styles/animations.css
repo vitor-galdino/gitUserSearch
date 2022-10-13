@@ -8,3 +8,27 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes redirectToProfile {
+    0% {
+        opacity: 0;
+        overflow: hidden;
+        transform: translateX(100%);
+    }
+    100% {
+        overflow: hidden;
+        opacity: 1;
+    }
+}
+
+@keyframes redirectToHome {
+    0% {
+        opacity: 0;
+        overflow: hidden;
+        transform: translateX(-100%);
+    }
+    100% {
+        overflow: hidden;
+        opacity: 1;
+    }
+}

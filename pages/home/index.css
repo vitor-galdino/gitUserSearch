@@ -1,3 +1,7 @@
+.transition {
+    animation: redirectToProfile .7s cubic-bezier(.51,.92,.24,1.15);
+}
+
 .homepage-container {
     display: flex;
     color: var(--color-white);
