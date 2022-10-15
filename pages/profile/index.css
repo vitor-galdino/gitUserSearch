@@ -129,12 +129,25 @@ header {
 }
 
 @media (max-width: 1350px) {
+    .profile-container {
+        max-width: 95vw;
+    }
+
     .repos-content {
         justify-content: center;
     }
 }
 
-@media (max-width: 461px) {
+@media (max-width: 610px) {
+
+    .profile-container {
+        max-width: 90vw;
+    }
+
+    .profile-header {
+        justify-content: center;
+    }
+
     .user-tool {
         margin-top: 20px;
     }
