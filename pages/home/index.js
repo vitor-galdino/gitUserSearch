@@ -99,6 +99,7 @@ async function checkUserApi(userName) {
     } else {
         getUserLogStorage(userDetails.login, userDetails.avatar_url);
         setTimeout(() => {
+            loadingButton(mainInput, mainButton, false);
             location.assign(location.href.replace("home/", `profile/index.html?user=${userName}`));
         }, 800)
     }
